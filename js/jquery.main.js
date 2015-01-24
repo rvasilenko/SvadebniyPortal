@@ -39,6 +39,14 @@ function initOpenClose() {
         animSpeed: 400,
         effect:'slide'
     });
+    jQuery('.add-nav > li').openClose({
+        addClassBeforeAnimation: false,
+        activeClass:'active',
+        opener:'> a',
+        slider:'ul',
+        animSpeed: 300,
+        effect:'slide'
+    });
 }
 
 // slideshow init
