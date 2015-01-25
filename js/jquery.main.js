@@ -25,7 +25,8 @@ function initColumnLayout() {
 // tabs init
 function initTabs() {
     jQuery('.tabset').contentTabs({
-        tabLinks: 'a.tab-link'
+        tabLinks: 'a.tab-link',
+        checkHash: true
     });
 }
 
@@ -92,9 +93,6 @@ function initLightbox() {
     }).fancybox();
     jQuery('a.lightbox-link').fancybox({
         padding: 0,
-        modal: true,
-        overlayShow: false,
-        overlayOpacity: 0,
         showCloseButton: false,
         onStart: function() {
             var $wrap = jQuery('#fancybox-wrap');
