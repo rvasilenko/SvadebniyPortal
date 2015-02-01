@@ -807,6 +807,14 @@ fieldset {
     background-position: 0 -644px;
 }
 
+.title.title-hen-party-wide {
+    margin-bottom: 20px;
+}
+.title.title-hen-party-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -694px;
+}
 .text-title {
     display: block;
     margin: 0;
@@ -1112,7 +1120,7 @@ fieldset {
 }
 .photo-box .photo {
     position: relative;
-    padding: 14px 5px 5px;
+    padding: 20px 5px 5px;
 }
 .photo-box-large2 .photo {
     padding-top: 80px;
@@ -1218,9 +1226,13 @@ fieldset {
 .photo-box .sticker.pink {
     background-position: -221px -82px;
 }
+.photo-box .sticker.purple {
+    background-position: -245px -82px;
+}
 .photo-box .sticker.dark-blue-wide,
 .photo-box .sticker.pink-wide,
-.photo-box .sticker.orange-wide {
+.photo-box .sticker.orange-wide,
+.photo-box .sticker.purple-wide{
     width: 46px;
     height: 59px;
 }
@@ -1232,6 +1244,9 @@ fieldset {
 }
 .photo-box .sticker.orange-wide {
     background-position: -258px 0;
+}
+.photo-box .sticker.purple-wide {
+    background-position: -269px -82px;
 }
 /* shop */
 .shop {
@@ -1685,6 +1700,10 @@ div.see-also ul > li{
     background: url(../images/bg-ideas-invitations.jpg) no-repeat 50% 0;
     border-radius: 0;
 }
+.ideas.ideas-hen-party {
+    background: url(../images/bg-ideas-hen-party.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
 .ideas .text-holder {
     border: solid #f8fcfa;
     border-width: 2px 1px;
@@ -1702,6 +1721,9 @@ div.see-also ul > li{
 .ideas .text-add-photos {
     display: block;
     margin: 0 auto 20px;
+}
+.ideas.ideas-hen-party .text-add-photos {
+    margin-right: 67px;
 }
 .color-list {
     margin: 0 0 6px;
@@ -1769,6 +1791,9 @@ div.see-also ul > li{
 }
 .ideas.ideas-invitations .button {
     background: #eee6dd;
+}
+.ideas.ideas-hen-party .button {
+    background: #fff;
 }
 .banner .button:hover,
 .ideas .button:hover{
