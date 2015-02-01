@@ -28,6 +28,12 @@ function initTabs() {
         tabLinks: 'a.tab-link',
         checkHash: true
     });
+
+    /* comments tabs */
+    jQuery('ul.tabs').delegate('li:not(.current)', 'click', function() {
+        jQuery(this).addClass('current').siblings().removeClass('current')
+            .parents('div.section').find('div.box').hide().eq(jQuery(this).index()).fadeIn(150);
+    });
 }
 
 // open-close init

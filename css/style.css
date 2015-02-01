@@ -797,6 +797,51 @@ fieldset {
     height: 38px;
     background-position: -792px -447px;
 }
+
+.title.title-invitations-wide {
+    margin-bottom: 20px;
+}
+.title.title-invitations-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -644px;
+}
+
+.title.title-hen-party-wide {
+    margin-bottom: 20px;
+}
+.title.title-hen-party-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -694px;
+}
+
+.title.title-stag-party-wide {
+    margin-bottom: 20px;
+}
+.title.title-stag-party-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -744px;
+}
+
+.title.title-groom-look-wide {
+    margin-bottom: 20px;
+}
+.title.title-groom-look-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -794px;
+}
+
+.title.title-buyout-wide {
+    margin-bottom: 20px;
+}
+.title.title-buyout-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -844px;
+}
 .text-title {
     display: block;
     margin: 0;
@@ -1102,7 +1147,7 @@ fieldset {
 }
 .photo-box .photo {
     position: relative;
-    padding: 14px 5px 5px;
+    padding: 20px 5px 5px;
 }
 .photo-box-large2 .photo {
     padding-top: 80px;
@@ -1142,15 +1187,29 @@ fieldset {
     height: 55px;
     z-index: 1;
 }
+.photo-box .caption .cell {
+    height: 55px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.photo-box .caption .cell-sticker {
+    vertical-align: bottom;
+}
 .photo-box-large2 .caption {
     top: 0;
     bottom: auto;
     vertical-align: middle;
     height: 60px;
 }
+.photo-box-large2 .caption .cell {
+    height: 60px;
+}
 .photo-box-large .caption {
     left: 25px;
-    height: 73px;
+    height: 85px;
+}
+.photo-box-large .caption .cell {
+    height: 85px;
 }
 .photo-box .caption strong {
     display: block;
@@ -1174,6 +1233,10 @@ fieldset {
     text-decoration: none;
     color: #bb7389;
 }
+.photo-box.purple-color .caption a:hover {
+    text-decoration: none;
+    color: #bb7389;
+}
 .photo-box .caption .date,
 .photo-box .caption .price{
     display: block;
@@ -1182,10 +1245,10 @@ fieldset {
 }
 .photo-box .caption .price {font-size: 14px;}
 .photo-box .sticker {
-    float: left;
+    display: block;
+    margin: 0 15px 0 0;
     width: 24px;
     height: 73px;
-    margin: 0 15px 0 0;
     background: url(../images/stickers.png) no-repeat -127px 0;
 }
 .photo-box .sticker.dark-blue {
@@ -1194,16 +1257,48 @@ fieldset {
 .photo-box .sticker.pink {
     background-position: -221px -82px;
 }
+.photo-box .sticker.purple {
+    background-position: -245px -82px;
+}
+.photo-box .sticker.dark-purple {
+    background-position: -367px -82px;
+}
+.photo-box .sticker.gray {
+    background-position: -352px 0;
+}
+.photo-box .sticker.green {
+    background-position: -424px 0;
+}
 .photo-box .sticker.dark-blue-wide,
-.photo-box .sticker.pink-wide{
+.photo-box .sticker.pink-wide,
+.photo-box .sticker.orange-wide,
+.photo-box .sticker.purple-wide,
+.photo-box .sticker.dark-purple-wide,
+.photo-box .sticker.gray-wide,
+.photo-box .sticker.green-wide{
     width: 46px;
-    height: 56px;
+    height: 59px;
 }
 .photo-box .sticker.dark-blue-wide {
     background-position: -151px 0;
 }
 .photo-box .sticker.pink-wide {
     background-position: -174px -82px;
+}
+.photo-box .sticker.orange-wide {
+    background-position: -258px 0;
+}
+.photo-box .sticker.purple-wide {
+    background-position: -269px -82px;
+}
+.photo-box .sticker.dark-purple-wide {
+    background-position: -318px -82px;
+}
+.photo-box .sticker.gray-wide {
+    background-position: -305px 0;
+}
+.photo-box .sticker.green-wide {
+    background-position: -377px 0;
 }
 /* shop */
 .shop {
@@ -1643,50 +1738,69 @@ div.see-also ul > li{
 }
 /* ideas */
 .ideas {
-    background: rgba(180, 224, 215, 0.57);
+    background: url("../images/bg-ideas.png") no-repeat 50% 0;
     width: 1168px;
     padding: 12px 16px 14px;
     border-radius: 10px;
     margin: 0 auto 25px;
+    height: 253px;
 }
 .ideas.ideas-bride {
     background: #cdcccc url(../images/bg-ideas-bride.jpg) no-repeat 50% 0;
     border-radius: 0;
 }
+.ideas.ideas-invitations {
+    background: url(../images/bg-ideas-invitations.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
+.ideas.ideas-hen-party {
+    background: url(../images/bg-ideas-hen-party.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
+.ideas.ideas-stag-party {
+    background: url(../images/bg-ideas-stag-party.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
+.ideas.ideas-groom {
+    background: url(../images/bg-ideas-groom.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
+.ideas.ideas-buyout {
+    background: url(../images/bg-ideas-buyout.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
 .ideas .text-holder {
-    border: solid #f8fcfa;
-    border-width: 2px 1px;
     text-align: center;
-    padding: 15px 0 14px;
+    padding: 17px 0 16px;
 }
 .text-fotoideas {
     display: block;
-    width: 175px;
-    height: 38px;
     margin: 0 auto 23px;
-    background: url(../images/text-fotoideas.png) no-repeat;
-    text-indent: -9999px;
 }
-.ideas .add-photos-purple {
-    display: block;
-    width: 742px;
-    height: 63px;
-    margin: 0 auto 20px;
-    background: url(../images/text-add-photos-purple.png) no-repeat;
-    text-indent: -9999px;
+.text-fotoideas img,
+.ideas .text-add-photos img{
+    vertical-align: top;
 }
-.ideas .add-photos-green {
+.ideas .text-add-photos {
     display: block;
-    width: 744px;
-    height: 63px;
     margin: 0 auto 20px;
-    background: url(../images/text-add-photos-green.png) no-repeat;
-    text-indent: -9999px;
+}
+.ideas.ideas-hen-party .text-add-photos {
+    margin-right: 90px;
+}
+.ideas.ideas-stag-party .text-add-photos {
+    margin-left: 110px;
 }
 .color-list {
     margin: 0 0 6px;
     padding: 0;
     list-style: none;
+}
+.ideas.ideas-hen-party .color-list {
+    margin-right: 80px;
+}
+.ideas.ideas-stag-party .color-list {
+    margin-left: 156px;
 }
 .color-list li {
     display: inline-block;
@@ -1746,6 +1860,14 @@ div.see-also ul > li{
 }
 .ideas.ideas-bride .button {
     background: #dcdbdc;
+}
+.ideas.ideas-invitations .button {
+    background: #eee6dd;
+}
+.ideas.ideas-hen-party .button,
+.ideas.ideas-stag-party .button,
+.ideas.ideas-groom .button{
+    background: #e1e1e0;
 }
 .banner .button:hover,
 .ideas .button:hover{
@@ -2866,4 +2988,42 @@ img.smile {
 #fancybox-title-float-right {
     padding: 0 0 0 15px;
     background: url(../images/fancybox/fancybox.png) -55px -90px no-repeat;
+}
+
+/* social tabs */
+ul.tabs {
+    height: 28px;
+    line-height: 25px;
+    list-style: none;
+    border-bottom: 1px solid #E4E4E4;
+}
+.tabs li {
+    display: inline;
+    font-size: 1em;
+    outline: 0;
+    border: 0;
+    background: #D8D8D8;
+    color: #555;
+    padding: 7px 10px;
+    margin: 20px 0 0 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor:pointer;
+
+}
+.tabs li:hover {
+    background: #2e4c79;
+    color: #fff
+}
+.tabs li.current {
+    background: #2e4c79;
+    color: #fff
+}
+.box {
+    display: none;
+}
+.box.visible {
+    display: block;
 }
