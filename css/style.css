@@ -815,6 +815,16 @@ fieldset {
     height: 46px;
     background-position: 0 -694px;
 }
+
+.title.title-stag-party-wide {
+    margin-bottom: 20px;
+}
+.title.title-stag-party-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -744px;
+}
+
 .text-title {
     display: block;
     margin: 0;
@@ -1206,6 +1216,10 @@ fieldset {
     text-decoration: none;
     color: #bb7389;
 }
+.photo-box.purple-color .caption a:hover {
+    text-decoration: none;
+    color: #bb7389;
+}
 .photo-box .caption .date,
 .photo-box .caption .price{
     display: block;
@@ -1229,10 +1243,14 @@ fieldset {
 .photo-box .sticker.purple {
     background-position: -245px -82px;
 }
+.photo-box .sticker.dark-purple {
+    background-position: -367px -82px;
+}
 .photo-box .sticker.dark-blue-wide,
 .photo-box .sticker.pink-wide,
 .photo-box .sticker.orange-wide,
-.photo-box .sticker.purple-wide{
+.photo-box .sticker.purple-wide,
+.photo-box .sticker.dark-purple-wide{
     width: 46px;
     height: 59px;
 }
@@ -1247,6 +1265,9 @@ fieldset {
 }
 .photo-box .sticker.purple-wide {
     background-position: -269px -82px;
+}
+.photo-box .sticker.dark-purple-wide {
+    background-position: -318px -82px;
 }
 /* shop */
 .shop {
@@ -1704,6 +1725,10 @@ div.see-also ul > li{
     background: url(../images/bg-ideas-hen-party.jpg) no-repeat 50% 0;
     border-radius: 0;
 }
+.ideas.ideas-stag-party {
+    background: url(../images/bg-ideas-stag-party.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
 .ideas .text-holder {
     border: solid #f8fcfa;
     border-width: 2px 1px;
@@ -1725,6 +1750,9 @@ div.see-also ul > li{
 .ideas.ideas-hen-party .text-add-photos {
     margin-right: 90px;
 }
+.ideas.ideas-stag-party .text-add-photos {
+    margin-left: 110px;
+}
 .color-list {
     margin: 0 0 6px;
     padding: 0;
@@ -1732,6 +1760,9 @@ div.see-also ul > li{
 }
 .ideas.ideas-hen-party .color-list {
     margin-right: 80px;
+}
+.ideas.ideas-stag-party .color-list {
+    margin-left: 156px;
 }
 .color-list li {
     display: inline-block;
@@ -1795,8 +1826,9 @@ div.see-also ul > li{
 .ideas.ideas-invitations .button {
     background: #eee6dd;
 }
-.ideas.ideas-hen-party .button {
-    background: #fff;
+.ideas.ideas-hen-party .button,
+.ideas.ideas-stag-party .button{
+    background: #e1e1e0;
 }
 .banner .button:hover,
 .ideas .button:hover{
