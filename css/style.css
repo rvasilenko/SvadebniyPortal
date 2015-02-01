@@ -1831,6 +1831,13 @@ img.smile {
 .intro .social-holder li {
     display: inline-block;
     padding: 0 25px;
+    vertical-align: middle;
+}
+.intro .social-holder li .fb_iframe_widget,
+.intro .social-holder li .fb_iframe_widget > span,
+.intro .social-holder li .twitter-share-button,
+.intro .social-holder li .odkl-klass-stat{
+    display: block;
 }
 .intro .sticker {
     position: absolute;
@@ -2048,6 +2055,12 @@ img.smile {
     display: inline-block;
     vertical-align: middle;
     margin: 0 40px;
+}
+.share .share-content li .fb_iframe_widget,
+.share .share-content li .fb_iframe_widget > span,
+.share .share-content li .twitter-share-button,
+.share .share-content li .odkl-klass-stat{
+    display: block;
 }
 .share .share-content li img {
     vertical-align: middle;
