@@ -725,15 +725,6 @@ fieldset {
     background-position: 0 -349px;
 }
 
-.title.title-useful-tips-short {
-    margin-bottom: 23px;
-}
-.title.title-useful-tips-short span {
-    width: 297px;
-    height: 41px;
-    background-position: -792px -80px;
-    margin: 0;
-}
 .title.title-bride-look-wide {
     margin-bottom: 20px;
 }
@@ -813,6 +804,12 @@ fieldset {
     height: 3px;
     width: 100%;
     background: url(../images/bg-colorful-dots3.png) repeat-x 0 100%;
+}
+.content-img-title {
+    margin-bottom: 23px;
+}
+.content-img-title img {
+    display: block;
 }
 /* top articles */
 .top-articles {
