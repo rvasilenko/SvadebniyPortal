@@ -30,9 +30,9 @@ function initTabs() {
     });
 
     /* comments tabs */
-    $('ul.tabs').delegate('li:not(.current)', 'click', function() {
-        $(this).addClass('current').siblings().removeClass('current')
-            .parents('div.section').find('div.box').hide().eq($(this).index()).fadeIn(150);
+    jQuery('ul.tabs').delegate('li:not(.current)', 'click', function() {
+        jQuery(this).addClass('current').siblings().removeClass('current')
+            .parents('div.section').find('div.box').hide().eq(jQuery(this).index()).fadeIn(150);
     });
 }
 
