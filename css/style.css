@@ -1723,12 +1723,15 @@ div.see-also ul > li{
     margin: 0 auto 20px;
 }
 .ideas.ideas-hen-party .text-add-photos {
-    margin-right: 67px;
+    margin-right: 90px;
 }
 .color-list {
     margin: 0 0 6px;
     padding: 0;
     list-style: none;
+}
+.ideas.ideas-hen-party .color-list {
+    margin-right: 80px;
 }
 .color-list li {
     display: inline-block;
