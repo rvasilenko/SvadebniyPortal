@@ -1738,12 +1738,12 @@ div.see-also ul > li{
 }
 /* ideas */
 .ideas {
-    background: rgba(180, 224, 215, 0.57);
+    background: url("../images/bg-ideas.png") no-repeat 50% 0;
     width: 1168px;
     padding: 12px 16px 14px;
     border-radius: 10px;
     margin: 0 auto 25px;
-    height: 258px;
+    height: 253px;
 }
 .ideas.ideas-bride {
     background: #cdcccc url(../images/bg-ideas-bride.jpg) no-repeat 50% 0;
