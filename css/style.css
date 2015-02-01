@@ -99,6 +99,7 @@ fieldset {
 .content-block:after,
 .content:after,
 .order-form .captcha-row:after,
+.content-holder:after,
 #footer .holder:after {
     display: block;
     content: '';
@@ -787,6 +788,15 @@ fieldset {
     background-position: 0 -594px;
 }
 
+.title.title-see-also-short {
+    width: 383px;
+    margin-bottom: 20px;
+}
+.title.title-see-also-short span {
+    width: 383px;
+    height: 38px;
+    background-position: -792px -447px;
+}
 .text-title {
     display: block;
     margin: 0;
@@ -1181,6 +1191,9 @@ fieldset {
 .photo-box .sticker.dark-blue {
     background-position: -127px -82px;
 }
+.photo-box .sticker.pink {
+    background-position: -221px -82px;
+}
 .photo-box .sticker.dark-blue-wide,
 .photo-box .sticker.pink-wide{
     width: 46px;
@@ -1254,19 +1267,22 @@ fieldset {
 }
 .shop .btn-left:hover {left: -37px;}
 .shop .btn-right:hover {right: -32px;}
-/* services, articles */
+/* services, articles, see-also */
 div.articles,
-div.services {
+div.services,
+div.see-also{
     margin: 0 0 25px;
 }
 div.articles ul,
-div.services ul {
+div.services ul,
+div.see-also ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 div.articles ul > li,
-div.services ul > li {
+div.services ul > li,
+div.see-also ul > li{
     display: inline-block;
     margin: 0 13px 0 0;
 }
@@ -2264,6 +2280,9 @@ img.smile {
     background: url(../images/sprite.png) no-repeat -225px -66px;
     width: 6px;
     height: 6px;
+}
+.content .comments-holder {
+    padding: 0 32px 218px 0;
 }
 /* footer */
 #footer {
