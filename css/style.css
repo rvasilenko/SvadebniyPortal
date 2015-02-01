@@ -735,7 +735,7 @@ fieldset {
     margin: 0;
 }
 .title.title-bride-look-wide {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .title.title-bride-look-wide span {
     width: 1200px;
@@ -1677,9 +1677,9 @@ div.see-also ul > li{
 }
 .ideas .add-photos-green {
     display: block;
-    width: 664px;
+    width: 744px;
     height: 63px;
-    margin: 0 auto 18px;
+    margin: 0 auto 20px;
     background: url(../images/text-add-photos-green.png) no-repeat;
     text-indent: -9999px;
 }
