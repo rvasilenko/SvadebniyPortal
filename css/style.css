@@ -797,6 +797,16 @@ fieldset {
     height: 38px;
     background-position: -792px -447px;
 }
+
+.title.title-invitations-wide {
+    margin-bottom: 20px;
+}
+.title.title-invitations-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -644px;
+}
+
 .text-title {
     display: block;
     margin: 0;
@@ -1142,15 +1152,29 @@ fieldset {
     height: 55px;
     z-index: 1;
 }
+.photo-box .caption .cell {
+    height: 55px;
+    vertical-align: middle;
+    display: table-cell;
+}
+.photo-box .caption .cell-sticker {
+    vertical-align: bottom;
+}
 .photo-box-large2 .caption {
     top: 0;
     bottom: auto;
     vertical-align: middle;
     height: 60px;
 }
+.photo-box-large2 .caption .cell {
+    height: 60px;
+}
 .photo-box-large .caption {
     left: 25px;
-    height: 73px;
+    height: 85px;
+}
+.photo-box-large .caption .cell {
+    height: 85px;
 }
 .photo-box .caption strong {
     display: block;
@@ -1182,10 +1206,10 @@ fieldset {
 }
 .photo-box .caption .price {font-size: 14px;}
 .photo-box .sticker {
-    float: left;
+    display: block;
+    margin: 0 15px 0 0;
     width: 24px;
     height: 73px;
-    margin: 0 15px 0 0;
     background: url(../images/stickers.png) no-repeat -127px 0;
 }
 .photo-box .sticker.dark-blue {
@@ -1195,15 +1219,19 @@ fieldset {
     background-position: -221px -82px;
 }
 .photo-box .sticker.dark-blue-wide,
-.photo-box .sticker.pink-wide{
+.photo-box .sticker.pink-wide,
+.photo-box .sticker.orange-wide {
     width: 46px;
-    height: 56px;
+    height: 59px;
 }
 .photo-box .sticker.dark-blue-wide {
     background-position: -151px 0;
 }
 .photo-box .sticker.pink-wide {
     background-position: -174px -82px;
+}
+.photo-box .sticker.orange-wide {
+    background-position: -258px 0;
 }
 /* shop */
 .shop {
@@ -1653,6 +1681,10 @@ div.see-also ul > li{
     background: #cdcccc url(../images/bg-ideas-bride.jpg) no-repeat 50% 0;
     border-radius: 0;
 }
+.ideas.ideas-invitations {
+    background: url(../images/bg-ideas-invitations.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
 .ideas .text-holder {
     border: solid #f8fcfa;
     border-width: 2px 1px;
@@ -1661,27 +1693,15 @@ div.see-also ul > li{
 }
 .text-fotoideas {
     display: block;
-    width: 175px;
-    height: 38px;
     margin: 0 auto 23px;
-    background: url(../images/text-fotoideas.png) no-repeat;
-    text-indent: -9999px;
 }
-.ideas .add-photos-purple {
-    display: block;
-    width: 742px;
-    height: 63px;
-    margin: 0 auto 20px;
-    background: url(../images/text-add-photos-purple.png) no-repeat;
-    text-indent: -9999px;
+.text-fotoideas img,
+.ideas .text-add-photos img{
+    vertical-align: top;
 }
-.ideas .add-photos-green {
+.ideas .text-add-photos {
     display: block;
-    width: 744px;
-    height: 63px;
     margin: 0 auto 20px;
-    background: url(../images/text-add-photos-green.png) no-repeat;
-    text-indent: -9999px;
 }
 .color-list {
     margin: 0 0 6px;
@@ -1746,6 +1766,9 @@ div.see-also ul > li{
 }
 .ideas.ideas-bride .button {
     background: #dcdbdc;
+}
+.ideas.ideas-invitations .button {
+    background: #eee6dd;
 }
 .banner .button:hover,
 .ideas .button:hover{
