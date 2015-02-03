@@ -4,11 +4,32 @@ jQuery(function() {
     initColumnLayout();
     initOpenClose();
     initLightbox();
+    initContactFormHandlers();
 });
 jQuery(window).load(function() {
     initSlideshow();
     initCarousel();
 });
+
+// contact form handlers
+function initContactFormHandlers() {
+    jQuery('.order-form .wpcf7').on('mailsent.wpcf7', function() {
+        var holder = jQuery(this);
+        holder.siblings('.text-title, .service-name').hide();
+        holder.find('form').children().hide();
+        var successMessage = holder.find('.wpcf7-mail-sent-ok');
+        var text = jQuery('<div />').addClass('text').append(successMessage);
+        holder.parent().next().prepend(text).show();
+    });
+
+    jQuery('.callback-form .wpcf7').on('mailsent.wpcf7', function() {
+        var holder = jQuery(this);
+        holder.parent().hide();
+        var successMessage = holder.find('.wpcf7-mail-sent-ok');
+        var text = jQuery('<div />').addClass('text').append(successMessage);
+        holder.parent().next().prepend(text).show();
+    });
+}
 
 // column layout init
 function initColumnLayout() {

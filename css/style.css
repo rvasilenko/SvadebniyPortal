@@ -2628,13 +2628,34 @@ img.smile {
     float: left;
     margin: 0 14px 0 0;
 }
+.order-form .wpcf7-form .captcha-row .captcha-img {
+    margin: 0 7px;
+}
 .order-form .captcha-row .captcha-img img {
-    vertical-align: top;
+    display: block;
+}
+.order-form .wpcf7-form .captcha-row .captcha-img img {
+    margin: 15px 0 0;
 }
 .order-form .captcha-row input[type=text] {
     width: 80px;
     float: left;
     margin: 4px 0 0;
+}
+.wpcf7-form .captcha-row p {
+    margin: 0;
+    overflow: hidden;
+}
+.wpcf7-form .captcha-row p > .wpcf7-form-control-wrap {
+    float: left;
+    width: 200px;
+}
+.wpcf7-form .captcha-row p > .wpcf7-form-control-wrap input[type=text] {
+    float: none;
+    display: block;
+}
+.wpcf7-form .captcha-row p > .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+    display: block;
 }
 .order-form input[type=submit],
 .callback-form input[type=submit]{
@@ -2705,7 +2726,12 @@ img.smile {
     width: 180px;
     float: right;
 }
+.order-form span.wpcf7-not-valid-tip,
+.callback-form span.wpcf7-not-valid-tip{
+    font-size: 12px;
+}
 .lightbox .success {
+    display: none;
     padding: 0 0 10px;
 }
 .lightbox .success .title {
@@ -2716,6 +2742,10 @@ img.smile {
 }
 .lightbox .success .title span {
     padding: 0 0 20px;
+}
+.lightbox .success div.wpcf7-mail-sent-ok {
+    border: 0;
+    margin: 0;
 }
 .lightbox .social-links-title {
     display: block;

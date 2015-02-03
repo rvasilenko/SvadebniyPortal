@@ -299,8 +299,9 @@
             <div class="order-form">
                 <strong class="text-title"><span>Заказать On-line</span></strong>
                 <span class="service-name">Запуск голубей</span>
-                <form action="#">
-                    <fieldset>
+                <div class="wpcf7">
+                    <form action="#">
+                        <fieldset>
                         <span class="row">
                             <label for="name">Имя*</label>
                             <input type="text" id="name"/>
@@ -325,51 +326,54 @@
                             <label for="comments">Комментарии</label>
                             <textarea id="comments"></textarea>
                         </span>
-                        <div class="row">
-                            <label for="captcha">Введите число, изображенное на картинке*</label>
-                            <div class="captcha-row">
-                                <div class="captcha-img"><img src="images/captcha.jpg" alt="" width="91" height="44"/></div>
-                                <input type="text" id="captcha"/>
-                                <input type="submit" value="Заказать"/>
+                            <div class="row">
+                                <label for="captcha">Введите число, изображенное на картинке*</label>
+                                <div class="captcha-row">
+                                    <div class="captcha-img"><img src="images/captcha.jpg" alt="" width="91" height="44"/></div>
+                                    <input type="text" id="captcha"/>
+                                    <input type="submit" value="Заказать"/>
+                                </div>
                             </div>
+                            <div class="required">
+                                <p>Поля, отмеченные звездочкой (*) обязательны для заполнения.</p>
+                            </div>
+                        </fieldset>
+                        <div class="success">
+                            <div class="text">
+                                <p>Имя, мы получили ваш заказ <strong>№3216</strong> и в ближайшее время свяжемся с вами.</p>
+                            </div>
+                            <span class="social-links-title">Мы в социальных сетях</span>
+                            <ul class="social">
+                                <li class="vk"><a href="#" title="Вконтакте">Вконтакте</a></li>
+                                <li class="fb"><a href="#" title="Facebook">Facebook</a></li>
+                                <li class="twit"><a href="#" title="Twitter">Twitter</a></li>
+                                <li class="inst"><a href="#" title="Instagram">Instagram</a></li>
+                                <li class="pint"><a href="#" title="Pinterest">Pinterest</a></li>
+                            </ul>
                         </div>
-                        <div class="required">
-                            <p>Поля, отмеченные звездочкой (*) обязательны для заполнения.</p>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="success">
-                <div class="text">
-                    <p>Имя, мы получили ваш заказ <strong>№3216</strong> и в ближайшее время свяжемся с вами.</p>
+                    </form>
                 </div>
-                <span class="social-links-title">Мы в социальных сетях</span>
-                <ul class="social">
-                    <li class="vk"><a href="#" title="Вконтакте">Вконтакте</a></li>
-                    <li class="fb"><a href="#" title="Facebook">Facebook</a></li>
-                    <li class="twit"><a href="#" title="Twitter">Twitter</a></li>
-                    <li class="inst"><a href="#" title="Instagram">Instagram</a></li>
-                    <li class="pint"><a href="#" title="Pinterest">Pinterest</a></li>
-                </ul>
             </div>
         </div>
         <div class="lightbox" id="callback">
             <span class="close">&nbsp;</span>
             <div class="callback-form">
                 <strong class="text-title"><span>Оставьте Ваше имя и телефон, пожалуйста.</span></strong>
-                <form action="#">
-                    <fieldset>
-                        <div class="row">
-                            <div class="input-box name-input">
-                                <input type="text" placeholder="Ваше имя"/>
+                <div class="wpcf7">
+                    <form action="#">
+                        <fieldset>
+                            <div class="row">
+                                <div class="input-box name-input">
+                                    <input type="text" placeholder="Ваше имя"/>
+                                </div>
+                                <div class="input-box phone-input">
+                                    <input type="text" placeholder="+_(___)____-___"/>
+                                </div>
+                                <input type="submit" value="Обратный звонок"/>
                             </div>
-                            <div class="input-box phone-input">
-                                <input type="text" placeholder="+_(___)____-___"/>
-                            </div>
-                            <input type="submit" value="Обратный звонок"/>
-                        </div>
-                    </fieldset>
-                </form>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
             <div class="success">
                 <div class="text">
