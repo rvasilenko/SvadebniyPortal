@@ -833,6 +833,14 @@ fieldset {
     height: 46px;
     background-position: 0 -844px;
 }
+.title.title-travels-wide {
+    margin-bottom: 42px;
+}
+.title.title-travels-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -894px;
+}
 .text-title {
     display: block;
     margin: 0;
@@ -855,6 +863,20 @@ fieldset {
 }
 .content-img-title img {
     display: block;
+}
+/* travel list */
+.travel-list {
+    margin: -10px 0 0;
+}
+.content .travel-list h2 {
+    margin-bottom: 30px;
+}
+.travel-list .letter {
+    background-position: -252px -32px;
+}
+.travel-list .column-list .list-item ul a:hover,
+.travel-list .column-list .list-item ul a .counter{
+    color: #6fa1c1;
 }
 /* top articles */
 .top-articles {
