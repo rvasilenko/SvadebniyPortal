@@ -2122,6 +2122,12 @@ img.smile {
 .service-box .caption a:hover {
     text-decoration: underline;
 }
+.service-box .price {
+    display: block;
+    color: #6d6f71;
+    font-size: 12px;
+    line-height: 16px;
+}
 .services-list {
     width: 1152px;
     margin: 0 -28px 0 0;
@@ -2253,10 +2259,12 @@ img.smile {
     display: block;
 }
 /* page content */
+.content-holder {
+    padding: 0 0 108px;
+}
 .page-content {
     float: right;
     margin: 0 29px 0 0;
-    padding: 0 0 108px;
     width: 866px;
     line-height: 24px;
 }
@@ -2412,6 +2420,32 @@ img.smile {
     background: url(../images/sprite.png) no-repeat -225px -66px;
     width: 6px;
     height: 6px;
+}
+
+/* service section */
+.services-section {
+    padding: 0 0 60px;
+}
+.page-content .services-section h1,
+.page-content .services-section h2{
+    font: bold 48px "artemius_light_ttregular", Georgia, serif;
+    text-align: center;
+    color: #bc4474;
+    padding: 0;
+}
+.page-content .services-section h1:after,
+.page-content .services-section h2:after {
+    display: none;
+}
+.page-content .service-box {
+    width: 262px;
+    margin: 0 8px 20px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 10px 6px;
+}
+.page-content .service-box .caption a{
+    font-size: 18px;
 }
 .content .comments-holder {
     padding: 0 32px 218px 0;
