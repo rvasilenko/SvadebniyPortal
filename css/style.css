@@ -834,7 +834,7 @@ fieldset {
     background-position: 0 -844px;
 }
 .title.title-travels-wide {
-    margin-bottom: 42px;
+    margin-bottom: 38px;
 }
 .title.title-travels-wide span {
     width: 1201px;
@@ -1256,6 +1256,10 @@ fieldset {
     text-decoration: none;
     color: #bb7389;
 }
+.photo-box.blue-color .caption a:hover {
+    text-decoration: none;
+    color: #6fa1c1;
+}
 .photo-box .caption .date,
 .photo-box .caption .price{
     display: block;
@@ -1269,6 +1273,9 @@ fieldset {
     width: 24px;
     height: 73px;
     background: url(../images/stickers.png) no-repeat -127px 0;
+}
+.photo-box .sticker.blue {
+    background-position: -439px -82px;
 }
 .photo-box .sticker.dark-blue {
     background-position: -127px -82px;
@@ -1288,6 +1295,8 @@ fieldset {
 .photo-box .sticker.green {
     background-position: -424px 0;
 }
+
+.photo-box .sticker.blue-wide,
 .photo-box .sticker.dark-blue-wide,
 .photo-box .sticker.pink-wide,
 .photo-box .sticker.orange-wide,
@@ -1297,6 +1306,9 @@ fieldset {
 .photo-box .sticker.green-wide{
     width: 46px;
     height: 59px;
+}
+.photo-box .sticker.blue-wide {
+    background-position: -392px -82px;
 }
 .photo-box .sticker.dark-blue-wide {
     background-position: -151px 0;
@@ -1390,7 +1402,7 @@ div.see-also{
 div.articles ul,
 div.services ul,
 div.see-also ul{
-    margin: 0;
+    margin: 0 -14px 0 0;
     padding: 0;
     list-style: none;
 }
@@ -1398,7 +1410,7 @@ div.articles ul > li,
 div.services ul > li,
 div.see-also ul > li{
     display: inline-block;
-    margin: 0 13px 0 0;
+    margin: 0 18px 0 0;
 }
 .align-right {
     text-align: right;
@@ -1489,6 +1501,12 @@ div.see-also ul > li{
     padding: 22px 0 0 30px;
     background: url(../images/bg-content-pattern.png) repeat-y;
     position: relative;
+}
+.container .content.content-wide {
+    width: 1166px;
+    margin: 0 0 36px;
+    padding: 10px 20px 0;
+    background: url(../images/bg-wide-content-pattern.png) repeat-y;
 }
 .section-content {
     padding: 22px 52px 0;
@@ -1703,6 +1721,30 @@ div.see-also ul > li{
     text-align: center;
     margin: 0 0 18px;
 }
+.content-wide h2 {
+    font-size: 35px;
+    margin: 0 0 22px;
+}
+.content-wide .service-box {
+    width: 507px;
+    padding: 16px 20px;
+    display: inline-block;
+    margin: 0 14px 16px;
+}
+.content-wide .service-box .photo {
+    margin: 0 0 16px;
+}
+.content-wide .service-box .caption {
+    font-size: 18px;
+    padding: 7px 12px 10px;
+}
+.content-wide .service-box .caption a {
+    font-size: 21px;
+    font-weight: bold;
+}
+.content-wide .services-section {
+    padding: 0 0 18px;
+}
 .imgs {
     margin: 0 -12px 30px 0;
     width: 1120px;
@@ -1788,6 +1830,10 @@ div.see-also ul > li{
     background: url(../images/bg-ideas-buyout.jpg) no-repeat 50% 0;
     border-radius: 0;
 }
+.ideas.ideas-wedding {
+    background: url(../images/bg-ideas-wedding.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
 .ideas .text-holder {
     text-align: center;
     padding: 17px 0 16px;
@@ -1810,6 +1856,9 @@ div.see-also ul > li{
 .ideas.ideas-stag-party .text-add-photos {
     margin-left: 110px;
 }
+.ideas.ideas-wedding .text-add-photos {
+    margin-right: 80px;
+}
 .color-list {
     margin: 0 0 6px;
     padding: 0;
@@ -1820,6 +1869,9 @@ div.see-also ul > li{
 }
 .ideas.ideas-stag-party .color-list {
     margin-left: 156px;
+}
+.ideas.ideas-wedding .color-list {
+    margin-right: 120px;
 }
 .color-list li {
     display: inline-block;
@@ -1887,6 +1939,9 @@ div.see-also ul > li{
 .ideas.ideas-stag-party .button,
 .ideas.ideas-groom .button{
     background: #e1e1e0;
+}
+.ideas.ideas-wedding .button {
+    background: none;
 }
 .banner .button:hover,
 .ideas .button:hover{
@@ -2143,6 +2198,12 @@ img.smile {
 }
 .service-box .caption a:hover {
     text-decoration: underline;
+}
+.service-box .caption p {
+    margin: 0;
+}
+.service-box .caption .phone {
+    color: #bc4474;
 }
 .service-box .price {
     display: block;
