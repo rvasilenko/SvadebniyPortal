@@ -789,6 +789,16 @@ fieldset {
     background-position: -792px -447px;
 }
 
+.title.title-see-more-short {
+    width: 383px;
+    margin-bottom: 20px;
+}
+.title.title-see-more-short span {
+    width: 383px;
+    height: 38px;
+    background-position: -792px -82px;
+}
+
 .title.title-invitations-wide {
     margin-bottom: 20px;
 }
@@ -834,7 +844,7 @@ fieldset {
     background-position: 0 -844px;
 }
 .title.title-travels-wide {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
 }
 .title.title-travels-wide span {
     width: 1201px;
@@ -1670,6 +1680,54 @@ div.see-also ul > li{
 .content-block p strong {
     font-weight: bold;
 }
+.content-block table {
+    margin: 0 0 20px;
+    padding: 0;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    line-height: 19px;
+}
+.content-block table th {
+    color: #6a6a6a;
+    text-align: left;
+    font-weight: normal;
+    padding: 3px 15px 6px;
+}
+.content-block table.bg-table th {
+    background: #e2e2e1;
+}
+.content-block table th:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.content-block table th:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.content-block table td {
+    color: #56433b;
+    text-align: left;
+    font-weight: normal;
+    padding: 0 15px 10px;
+}
+.content-block table.bg-table td {
+    background: #f6f6f6;
+}
+.content-block table td.dots {
+    background-image: url(../images/bg-colorful-dots2.png);
+    background-position: 0 5px;
+    background-repeat: repeat-x;
+    height: 31px;
+    padding-bottom: 0;
+}
+.content-block table a {
+    color: #56433b;
+    text-decoration: underline;
+}
+.content-block table a:hover {
+    text-decoration: none;
+}
 .img {
     display: inline-block;
     border: 2px solid #56443c;
@@ -1715,6 +1773,9 @@ div.see-also ul > li{
     font: 29px/37px Tahoma, Geneva, sans-serif;
     color: #fff;
     margin-bottom: 0;
+}
+.content .country-article hr {
+    background: url(../images/separator-blue.png) no-repeat 50% 0;
 }
 .content h2 {
     font: 34px "artemius_light_ttregular", Georgia, serif;
@@ -1923,6 +1984,23 @@ div.see-also ul > li{
     border-radius: 16px;
     padding: 1px 16px 2px;
 }
+.button i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 3px 6px -3px -12px;
+}
+.button.button-tour i {
+    background: url(../images/sprite.png) no-repeat no-repeat -272px -72px;
+}
+.button.button-tour:hover i {
+    background: url(../images/sprite.png) no-repeat no-repeat -272px -92px;
+}
+.button.button-tour:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #90b3ca;
+    border-color: #90b3ca;
+}
 .banner .button {
     background: #e8c892;
 }
@@ -1968,6 +2046,10 @@ div.see-also ul > li{
 .article .content-block h2 {
     font-size: 35px;
 }
+.article .content-block h3 {
+    font-size: 21px;
+    margin: 0 0 6px;
+}
 .article .meta {
     display: inline-block;
     min-width: 357px;
@@ -1977,7 +2059,7 @@ div.see-also ul > li{
 }
 .article .entry {
     font: 18px/25px Tahoma, Geneva, sans-serif;
-    padding: 0 0 46px;
+    padding: 0 0 60px;
 }
 .article .entry p {
     text-align: justify;
@@ -2041,7 +2123,12 @@ img.smile {
     top: -18px;
     width: 60px;
     height: 74px;
+}
+.intro .sticker-zags {
     background: url(../images/stickers.png) no-repeat -198px 0;
+}
+.intro .sticker-travel {
+    background: url(../images/stickers.png) no-repeat -449px 0;
 }
 /* products */
 .products {
@@ -2176,7 +2263,10 @@ img.smile {
 }
 .align-center {
     text-align: center;
-    margin: -23px 0 36px;
+    margin: 0 0 36px;
+}
+.articles .align-center {
+    margin-top: -23px;
 }
 /* services list */
 .service-box {
