@@ -789,6 +789,16 @@ fieldset {
     background-position: -792px -447px;
 }
 
+.title.title-see-more-short {
+    width: 383px;
+    margin-bottom: 20px;
+}
+.title.title-see-more-short span {
+    width: 383px;
+    height: 38px;
+    background-position: -792px -82px;
+}
+
 .title.title-invitations-wide {
     margin-bottom: 20px;
 }
@@ -833,6 +843,14 @@ fieldset {
     height: 46px;
     background-position: 0 -844px;
 }
+.title.title-travels-wide {
+    margin-bottom: 30px;
+}
+.title.title-travels-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -894px;
+}
 .text-title {
     display: block;
     margin: 0;
@@ -855,6 +873,20 @@ fieldset {
 }
 .content-img-title img {
     display: block;
+}
+/* travel list */
+.travel-list {
+    margin: -10px 0 0;
+}
+.content .travel-list h2 {
+    margin-bottom: 30px;
+}
+.travel-list .letter {
+    background-position: -252px -32px;
+}
+.travel-list .column-list .list-item ul a:hover,
+.travel-list .column-list .list-item ul a .counter{
+    color: #6fa1c1;
 }
 /* top articles */
 .top-articles {
@@ -1234,6 +1266,10 @@ fieldset {
     text-decoration: none;
     color: #bb7389;
 }
+.photo-box.blue-color .caption a:hover {
+    text-decoration: none;
+    color: #6fa1c1;
+}
 .photo-box .caption .date,
 .photo-box .caption .price{
     display: block;
@@ -1247,6 +1283,9 @@ fieldset {
     width: 24px;
     height: 73px;
     background: url(../images/stickers.png) no-repeat -127px 0;
+}
+.photo-box .sticker.blue {
+    background-position: -439px -82px;
 }
 .photo-box .sticker.dark-blue {
     background-position: -127px -82px;
@@ -1266,6 +1305,8 @@ fieldset {
 .photo-box .sticker.green {
     background-position: -424px 0;
 }
+
+.photo-box .sticker.blue-wide,
 .photo-box .sticker.dark-blue-wide,
 .photo-box .sticker.pink-wide,
 .photo-box .sticker.orange-wide,
@@ -1275,6 +1316,9 @@ fieldset {
 .photo-box .sticker.green-wide{
     width: 46px;
     height: 59px;
+}
+.photo-box .sticker.blue-wide {
+    background-position: -392px -82px;
 }
 .photo-box .sticker.dark-blue-wide {
     background-position: -151px 0;
@@ -1368,7 +1412,7 @@ div.see-also{
 div.articles ul,
 div.services ul,
 div.see-also ul{
-    margin: 0;
+    margin: 0 -14px 0 0;
     padding: 0;
     list-style: none;
 }
@@ -1376,7 +1420,7 @@ div.articles ul > li,
 div.services ul > li,
 div.see-also ul > li{
     display: inline-block;
-    margin: 0 13px 0 0;
+    margin: 0 18px 0 0;
 }
 .align-right {
     text-align: right;
@@ -1467,6 +1511,12 @@ div.see-also ul > li{
     padding: 22px 0 0 30px;
     background: url(../images/bg-content-pattern.png) repeat-y;
     position: relative;
+}
+.container .content.content-wide {
+    width: 1166px;
+    margin: 0 0 36px;
+    padding: 10px 20px 0;
+    background: url(../images/bg-wide-content-pattern.png) repeat-y;
 }
 .section-content {
     padding: 22px 52px 0;
@@ -1630,6 +1680,54 @@ div.see-also ul > li{
 .content-block p strong {
     font-weight: bold;
 }
+.content-block table {
+    margin: 0 0 20px;
+    padding: 0;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    line-height: 19px;
+}
+.content-block table th {
+    color: #6a6a6a;
+    text-align: left;
+    font-weight: normal;
+    padding: 3px 15px 6px;
+}
+.content-block table.bg-table th {
+    background: #e2e2e1;
+}
+.content-block table th:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.content-block table th:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.content-block table td {
+    color: #56433b;
+    text-align: left;
+    font-weight: normal;
+    padding: 0 15px 10px;
+}
+.content-block table.bg-table td {
+    background: #f6f6f6;
+}
+.content-block table td.dots {
+    background-image: url(../images/bg-colorful-dots2.png);
+    background-position: 0 5px;
+    background-repeat: repeat-x;
+    height: 31px;
+    padding-bottom: 0;
+}
+.content-block table a {
+    color: #56433b;
+    text-decoration: underline;
+}
+.content-block table a:hover {
+    text-decoration: none;
+}
 .img {
     display: inline-block;
     border: 2px solid #56443c;
@@ -1676,10 +1774,37 @@ div.see-also ul > li{
     color: #fff;
     margin-bottom: 0;
 }
+.content .country-article hr {
+    background: url(../images/separator-blue.png) no-repeat 50% 0;
+}
 .content h2 {
     font: 34px "artemius_light_ttregular", Georgia, serif;
     text-align: center;
     margin: 0 0 18px;
+}
+.content-wide h2 {
+    font-size: 35px;
+    margin: 0 0 22px;
+}
+.content-wide .service-box {
+    width: 507px;
+    padding: 16px 20px;
+    display: inline-block;
+    margin: 0 14px 16px;
+}
+.content-wide .service-box .photo {
+    margin: 0 0 16px;
+}
+.content-wide .service-box .caption {
+    font-size: 18px;
+    padding: 7px 12px 10px;
+}
+.content-wide .service-box .caption a {
+    font-size: 21px;
+    font-weight: bold;
+}
+.content-wide .services-section {
+    padding: 0 0 18px;
 }
 .imgs {
     margin: 0 -12px 30px 0;
@@ -1766,6 +1891,10 @@ div.see-also ul > li{
     background: url(../images/bg-ideas-buyout.jpg) no-repeat 50% 0;
     border-radius: 0;
 }
+.ideas.ideas-wedding {
+    background: url(../images/bg-ideas-wedding.jpg) no-repeat 50% 0;
+    border-radius: 0;
+}
 .ideas .text-holder {
     text-align: center;
     padding: 17px 0 16px;
@@ -1788,6 +1917,9 @@ div.see-also ul > li{
 .ideas.ideas-stag-party .text-add-photos {
     margin-left: 110px;
 }
+.ideas.ideas-wedding .text-add-photos {
+    margin-right: 80px;
+}
 .color-list {
     margin: 0 0 6px;
     padding: 0;
@@ -1798,6 +1930,9 @@ div.see-also ul > li{
 }
 .ideas.ideas-stag-party .color-list {
     margin-left: 156px;
+}
+.ideas.ideas-wedding .color-list {
+    margin-right: 120px;
 }
 .color-list li {
     display: inline-block;
@@ -1849,6 +1984,23 @@ div.see-also ul > li{
     border-radius: 16px;
     padding: 1px 16px 2px;
 }
+.button i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 3px 6px -3px -12px;
+}
+.button.button-tour i {
+    background: url(../images/sprite.png) no-repeat no-repeat -272px -72px;
+}
+.button.button-tour:hover i {
+    background: url(../images/sprite.png) no-repeat no-repeat -272px -92px;
+}
+.button.button-tour:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #90b3ca;
+    border-color: #90b3ca;
+}
 .banner .button {
     background: #e8c892;
 }
@@ -1865,6 +2017,9 @@ div.see-also ul > li{
 .ideas.ideas-stag-party .button,
 .ideas.ideas-groom .button{
     background: #e1e1e0;
+}
+.ideas.ideas-wedding .button {
+    background: none;
 }
 .banner .button:hover,
 .ideas .button:hover{
@@ -1891,6 +2046,10 @@ div.see-also ul > li{
 .article .content-block h2 {
     font-size: 35px;
 }
+.article .content-block h3 {
+    font-size: 21px;
+    margin: 0 0 6px;
+}
 .article .meta {
     display: inline-block;
     min-width: 357px;
@@ -1900,7 +2059,7 @@ div.see-also ul > li{
 }
 .article .entry {
     font: 18px/25px Tahoma, Geneva, sans-serif;
-    padding: 0 0 46px;
+    padding: 0 0 60px;
 }
 .article .entry p {
     text-align: justify;
@@ -1964,7 +2123,12 @@ img.smile {
     top: -18px;
     width: 60px;
     height: 74px;
+}
+.intro .sticker-zags {
     background: url(../images/stickers.png) no-repeat -198px 0;
+}
+.intro .sticker-travel {
+    background: url(../images/stickers.png) no-repeat -449px 0;
 }
 /* products */
 .products {
@@ -2099,7 +2263,10 @@ img.smile {
 }
 .align-center {
     text-align: center;
-    margin: -23px 0 36px;
+    margin: 0 0 36px;
+}
+.articles .align-center {
+    margin-top: -23px;
 }
 /* services list */
 .service-box {
@@ -2121,6 +2288,18 @@ img.smile {
 }
 .service-box .caption a:hover {
     text-decoration: underline;
+}
+.service-box .caption p {
+    margin: 0;
+}
+.service-box .caption .phone {
+    color: #bc4474;
+}
+.service-box .price {
+    display: block;
+    color: #6d6f71;
+    font-size: 12px;
+    line-height: 16px;
 }
 .services-list {
     width: 1152px;
@@ -2253,10 +2432,12 @@ img.smile {
     display: block;
 }
 /* page content */
+.content-holder {
+    padding: 0 0 108px;
+}
 .page-content {
     float: right;
     margin: 0 29px 0 0;
-    padding: 0 0 108px;
     width: 866px;
     line-height: 24px;
 }
@@ -2412,6 +2593,32 @@ img.smile {
     background: url(../images/sprite.png) no-repeat -225px -66px;
     width: 6px;
     height: 6px;
+}
+
+/* service section */
+.services-section {
+    padding: 0 0 60px;
+}
+.page-content .services-section h1,
+.page-content .services-section h2{
+    font: bold 48px "artemius_light_ttregular", Georgia, serif;
+    text-align: center;
+    color: #bc4474;
+    padding: 0;
+}
+.page-content .services-section h1:after,
+.page-content .services-section h2:after {
+    display: none;
+}
+.page-content .service-box {
+    width: 262px;
+    margin: 0 8px 20px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 10px 6px;
+}
+.page-content .service-box .caption a{
+    font-size: 18px;
 }
 .content .comments-holder {
     padding: 0 32px 218px 0;
