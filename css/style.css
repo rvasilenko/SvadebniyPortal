@@ -1295,7 +1295,7 @@ fieldset {
     background: url(../images/stickers.png) no-repeat -127px 0;
 }
 .photo-box .sticker.blue {
-    background-position: -439px -82px;
+    background-position: -496px 0;
 }
 .photo-box .sticker.dark-blue {
     background-position: -127px -82px;
@@ -1332,7 +1332,7 @@ fieldset {
     height: 59px;
 }
 .photo-box .sticker.blue-wide {
-    background-position: -392px -82px;
+    background-position: -449px 0;
 }
 .photo-box .sticker.dark-blue-wide {
     background-position: -151px 0;
@@ -2136,7 +2136,7 @@ img.smile {
     background: url(../images/stickers.png) no-repeat -198px 0;
 }
 .intro .sticker-travel {
-    background: url(../images/stickers.png) no-repeat -449px 0;
+    background: url(../images/stickers.png) no-repeat -521px 0;
 }
 /* products */
 .products {
