@@ -1749,6 +1749,7 @@ div.see-also ul > li{
     display: inline-block;
     border: 2px solid #56443c;
     padding: 4px;
+    background: #fff;
 }
 .img.main-img {
     padding: 16px 16px 12px;
@@ -1773,7 +1774,9 @@ div.see-also ul > li{
     padding: 0 16px 0 0;
 }
 .about-page .map {
-    padding: 0 0 52px;
+    margin: 0 0 52px;
+    padding: 0;
+    border: 12px solid #fff;
 }
 .content hr,
 .content .num-hr{
@@ -2156,6 +2159,7 @@ img.smile {
     border: 2px solid #56443c;
     width: 326px;
     padding: 12px 14px 0;
+    background: #fff;
 }
 .product-box .photo {
     margin: 0 0 20px;
@@ -2295,6 +2299,7 @@ img.smile {
     border: 2px solid #56443c;
     width: 338px;
     padding: 8px;
+    background: #fff;
 }
 .service-box img {
     vertical-align: top;
