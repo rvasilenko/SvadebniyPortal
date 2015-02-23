@@ -843,10 +843,20 @@ fieldset {
     height: 46px;
     background-position: 0 -844px;
 }
+
 .title.title-travels-wide {
     margin-bottom: 30px;
 }
 .title.title-travels-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -942px;
+}
+
+.title.title-banket-wide {
+    margin-bottom: 20px;
+}
+.title.title-banket-wide span {
     width: 1201px;
     height: 46px;
     background-position: 0 -894px;
@@ -1285,7 +1295,7 @@ fieldset {
     background: url(../images/stickers.png) no-repeat -127px 0;
 }
 .photo-box .sticker.blue {
-    background-position: -439px -82px;
+    background-position: -496px 0;
 }
 .photo-box .sticker.dark-blue {
     background-position: -127px -82px;
@@ -1305,6 +1315,9 @@ fieldset {
 .photo-box .sticker.green {
     background-position: -424px 0;
 }
+.photo-box .sticker.turquoise {
+    background-position: -392px -82px;
+}
 
 .photo-box .sticker.blue-wide,
 .photo-box .sticker.dark-blue-wide,
@@ -1313,12 +1326,13 @@ fieldset {
 .photo-box .sticker.purple-wide,
 .photo-box .sticker.dark-purple-wide,
 .photo-box .sticker.gray-wide,
-.photo-box .sticker.green-wide{
+.photo-box .sticker.green-wide,
+.photo-box .sticker.turquoise-wide{
     width: 46px;
     height: 59px;
 }
 .photo-box .sticker.blue-wide {
-    background-position: -392px -82px;
+    background-position: -449px 0;
 }
 .photo-box .sticker.dark-blue-wide {
     background-position: -151px 0;
@@ -1340,6 +1354,9 @@ fieldset {
 }
 .photo-box .sticker.green-wide {
     background-position: -377px 0;
+}
+.photo-box .sticker.turquoise-wide {
+    background-position: -417px -82px;
 }
 /* shop */
 .shop {
@@ -1861,43 +1878,27 @@ div.see-also ul > li{
 /* ideas */
 .ideas {
     background: url("../images/bg-ideas.png") no-repeat 50% 0;
-    width: 1168px;
-    padding: 12px 16px 14px;
+    width: 1204px;
     border-radius: 10px;
     margin: 0 auto 25px;
-    height: 253px;
+    position: relative;
 }
-.ideas.ideas-bride {
-    background: #cdcccc url(../images/bg-ideas-bride.jpg) no-repeat 50% 0;
-    border-radius: 0;
-}
-.ideas.ideas-invitations {
-    background: url(../images/bg-ideas-invitations.jpg) no-repeat 50% 0;
-    border-radius: 0;
-}
-.ideas.ideas-hen-party {
-    background: url(../images/bg-ideas-hen-party.jpg) no-repeat 50% 0;
-    border-radius: 0;
-}
-.ideas.ideas-stag-party {
-    background: url(../images/bg-ideas-stag-party.jpg) no-repeat 50% 0;
-    border-radius: 0;
-}
-.ideas.ideas-groom {
-    background: url(../images/bg-ideas-groom.jpg) no-repeat 50% 0;
-    border-radius: 0;
-}
-.ideas.ideas-buyout {
-    background: url(../images/bg-ideas-buyout.jpg) no-repeat 50% 0;
-    border-radius: 0;
+.ideas > img {
+    margin: 0 auto;
+    display: block;
 }
 .ideas.ideas-wedding {
     background: url(../images/bg-ideas-wedding.jpg) no-repeat 50% 0;
     border-radius: 0;
 }
 .ideas .text-holder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     text-align: center;
-    padding: 17px 0 16px;
+    padding: 29px 16px 30px;
 }
 .text-fotoideas {
     display: block;
@@ -1917,6 +1918,9 @@ div.see-also ul > li{
 .ideas.ideas-stag-party .text-add-photos {
     margin-left: 110px;
 }
+.ideas.ideas-banket .text-add-photos {
+    margin-right: 60px;
+}
 .ideas.ideas-wedding .text-add-photos {
     margin-right: 80px;
 }
@@ -1930,6 +1934,9 @@ div.see-also ul > li{
 }
 .ideas.ideas-stag-party .color-list {
     margin-left: 156px;
+}
+.ideas.ideas-banket .color-list {
+    margin-right: 56px;
 }
 .ideas.ideas-wedding .color-list {
     margin-right: 120px;
@@ -2015,7 +2022,8 @@ div.see-also ul > li{
 }
 .ideas.ideas-hen-party .button,
 .ideas.ideas-stag-party .button,
-.ideas.ideas-groom .button{
+.ideas.ideas-groom .button,
+.ideas.ideas-banket .button{
     background: #e1e1e0;
 }
 .ideas.ideas-wedding .button {
@@ -2128,7 +2136,7 @@ img.smile {
     background: url(../images/stickers.png) no-repeat -198px 0;
 }
 .intro .sticker-travel {
-    background: url(../images/stickers.png) no-repeat -449px 0;
+    background: url(../images/stickers.png) no-repeat -521px 0;
 }
 /* products */
 .products {
@@ -2226,6 +2234,7 @@ img.smile {
     padding: 20px 0 0 0;
     width: 1182px;
     margin: 0 -120px 0 20px;
+    min-height: 200px;
 }
 .theme-item {
     padding: 10px 20px 18px;
@@ -2260,6 +2269,19 @@ img.smile {
 }
 .theme-item .icon img {
     vertical-align: middle;
+}
+.theme-item .number {
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 27px;
+    text-align: center;
+    color: #fff;
+    background: #9cbbc7;
+    font: 32px/52px Tahoma, Geneva, sans-serif;
+}
+.themes-banket .theme-item .number {
+    background: #95d7e4;
 }
 .align-center {
     text-align: center;
