@@ -747,6 +747,17 @@ fieldset {
     background-position: -399px -447px;
 }
 
+.title.title-articles-mini {
+    width: 254px;
+    margin-bottom: 14px;
+}
+
+.title.title-articles-mini span {
+    width: 254px;
+    height: 38px;
+    background-position: -792px 0;
+}
+
 .title.title-services-short2 {
     width: 436px;
     margin-bottom: 20px;
@@ -2394,6 +2405,8 @@ img.smile {
 .aside {
     float: left;
     margin: 0 0 0 -9px;
+    width: 245px;
+    padding: 0 10px 0 0;
 }
 .add-nav {
     font-size: 18px;
@@ -2424,6 +2437,7 @@ img.smile {
     position: relative;
     display: inline-block;
     padding: 0 0 0 18px;
+    color: #736357;
 }
 .add-nav a:hover,
 .add-nav ul li.active a {
@@ -2448,9 +2462,11 @@ img.smile {
 }
 .add-nav ul {
     margin: 0;
-    padding: 9px 0 0 39px;
+    padding: 9px 0 0 32px;
     list-style: none;
     display: none;
+    font-size: 15px;
+    line-height: 20px;
 }
 .add-nav ul li {
     padding: 3px 0;
@@ -2472,6 +2488,7 @@ img.smile {
 .page-content .contact-block {
     float: right;
     width: 251px;
+    margin: 0 0 100px;
 }
 .page-content .contact-block .text-right {
     text-align: right;
@@ -2524,6 +2541,9 @@ img.smile {
 }
 .page-content .contact-block .callback-link:hover {
     text-decoration: none;
+}
+.page-content .gift-box {
+    margin: 0 0 45px;
 }
 .page-content .gift-box img {
     vertical-align: top;
@@ -2602,17 +2622,17 @@ img.smile {
 .price-block em {
     font-size: 15px;
 }
-.page-content ul {
+.center-column ul {
     padding: 0 0 16px 3px;
     list-style: none;
     line-height: 25px;
 }
-.page-content ul li {
+.center-column ul li {
     position: relative;
     text-indent: 34px;
     margin: 0 0 6px;
 }
-.page-content ul li:after {
+.center-column ul li:after {
     content: '';
     position: absolute;
     left: 0;
@@ -2621,7 +2641,44 @@ img.smile {
     width: 6px;
     height: 6px;
 }
-
+.page-content .contact-block .block-menu {
+    margin: 0 -2px;
+}
+.block-menu ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.block-menu li {
+    position: relative;
+    padding: 10px 0 11px;
+}
+.block-menu li:after {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -12px;
+    content: '';
+    width: 23px;
+    height: 5px;
+    background: url(../images/sprite.png) no-repeat -272px -113px;
+}
+.block-menu li:first-child {
+    padding-top: 0;
+}
+.block-menu li:first-child:after {
+    display: none;
+}
+.block-menu ul a {
+    color: #614d45;
+    text-decoration: none;
+}
+.block-menu ul a:hover {
+    color: #cb83a0;
+}
 /* service section */
 .services-section {
     padding: 0 0 60px;
@@ -2639,7 +2696,7 @@ img.smile {
 }
 .page-content .service-box {
     width: 262px;
-    margin: 0 8px 20px;
+    margin: 0 16px 20px 0;
     display: inline-block;
     vertical-align: top;
     padding: 8px 10px 6px;
