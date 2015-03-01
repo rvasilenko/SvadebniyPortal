@@ -758,6 +758,9 @@ fieldset {
     background-position: -792px 0;
 }
 
+.title.title-articles-mini a:hover span {
+    background-position: -792px -41px;
+}
 .title.title-services-short2 {
     width: 436px;
     margin-bottom: 20px;
