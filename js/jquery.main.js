@@ -36,8 +36,30 @@ function initColumnLayout() {
     jQuery('.column-list').columnize({
         width: 360
     });
-    jQuery('.step-columns').columnize({
-        width: 285
+
+    jQuery('.step-list').each(function(index, list) {
+        var list = jQuery(list);
+        var listItems = list.children();
+        var listItemsCount = listItems.size();
+        if (listItemsCount === 1) {
+            list.addClass('one-item');
+        }
+        else if (listItemsCount === 2) {
+            list.addClass('two-items');
+        }
+        else if (listItemsCount === 3) {
+            list.addClass('three-items');
+        }
+        else if (list.hasClass('step-columns')) {
+            var totalRowsCount = Math.ceil(listItemsCount / 4);
+            for (var i = 0; i < 4; i++) {
+                for (var j = 0, k = 0; j < listItemsCount; j += 4, k++) {
+                    var itemIndex = i + j;
+                    var number = k + 1 + (totalRowsCount * i);
+                    listItems.eq(itemIndex).find('.number').text(number);
+                }
+            }
+        }
     });
     jQuery('.themes-columns').columnize({
         width: 350
@@ -83,6 +105,14 @@ function initSlideshow() {
         slides: 'ul.slides > li',
         btnPrev: '.arrow-left',
         btnNext: '.arrow-right',
+        autoRotation: false,
+        switchTime: 3000,
+        animSpeed: 650
+    });
+    jQuery('.article .slideshow').fadeGallery({
+        slides: '.slide',
+        btnPrev: '.btn-left-round',
+        btnNext: '.btn-right-round',
         autoRotation: false,
         switchTime: 3000,
         animSpeed: 650
