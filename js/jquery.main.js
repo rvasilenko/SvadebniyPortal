@@ -72,6 +72,10 @@ function initTabs() {
         checkHash: true
     });
 
+    jQuery('.tabs-menu').contentTabs({
+        tabLinks: '> a'
+    });
+
     /* comments tabs */
     jQuery('ul.tabs').delegate('li:not(.current)', 'click', function() {
         jQuery(this).addClass('current').siblings().removeClass('current')

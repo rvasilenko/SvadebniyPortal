@@ -878,6 +878,15 @@ fieldset {
     height: 46px;
     background-position: 0 -894px;
 }
+
+.title.title-photo-wide {
+    margin-bottom: 20px;
+}
+.title.title-photo-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -992px;
+}
 .text-title {
     display: block;
     margin: 0;
@@ -2737,14 +2746,20 @@ img.smile {
 .page-content .btn-gift:hover {
     text-decoration: underline;
 }
-.page-content h1 {
-    padding: 9px 0 24px;
+.page-content .title-holder {
+    padding: 9px 0 13px;
     margin: 0 0 17px;
     width: 582px;
-    font: 36px/22px "artemius_light_ttregular", Georgia, serif;
     position: relative;
 }
-.page-content h1:after {
+.page-content h1 {
+    margin: 0 0 11px;
+    font: 36px/22px "artemius_light_ttregular", Georgia, serif;
+}
+.page-content .title-holder.violet h1 {
+    color: #91659b;
+}
+.page-content .title-holder:after {
     content: '';
     position: absolute;
     left: 0;
@@ -2752,6 +2767,16 @@ img.smile {
     bottom: 0;
     height: 4px;
     background: url(../images/bg-colorful-dots.png) repeat-x;
+}
+.page-content .title-holder .rating-row > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-content .title-holder .rating-row .label {
+    margin: 0 8px 0 0;
+}
+.page-content .title-holder .rating-row img {
+    vertical-align: middle;
 }
 .page-content .img {
     padding: 4px;
@@ -2852,6 +2877,131 @@ img.smile {
 }
 .block-menu ul a:hover {
     color: #cb83a0;
+}
+/* photographer section */
+.photographer-info {
+    width: 585px;
+    margin: 0 0 56px;
+}
+.photographer-info .entry-content {
+    overflow: hidden;
+    padding: 0 0 30px;
+}
+
+.photographer-info .entry-content .photo {
+    float: left;
+    margin: 6px 28px 0 0;
+}
+.photographer-info .entry-content .photo img {
+    display: block;
+    margin: 0 0 2px;
+}
+.photographer-info .entry-content .entry-text {
+    text-align: justify;
+    line-height: 25px;
+}
+.photographer-info .entry-content .entry-text p {
+    margin: 0;
+}
+.photographer-info .align-right {
+    padding: 0;
+}
+.photographer-info .read-more {
+    font-size: 14px;
+    color: #bb4373;
+}
+.photographer-info .read-more:hover {
+    text-decoration: underline !important;
+}
+.add-to-favourite {
+    font-size: 10px;
+    color: #bc4474;
+    text-decoration: none;
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.add-to-favourite:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 13px;
+    background: url(../images/sprite.png) no-repeat -296px -88px;
+}
+.add-to-favourite:hover:after {
+    background-position: -312px -88px;
+}
+.add-to-favourite:hover {
+    text-decoration: underline;
+}
+/* tabs content */
+.page-content .tabs-content {
+    width: 585px;
+}
+.tabs-menu {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    overflow: hidden;
+}
+.tabs-menu a {
+    float: left;
+    width: 143px;
+    margin: 0 0 0 4px;
+    padding: 3px 0 4px;
+    background: #e2e2e1;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #56433b;
+}
+.tabs-menu a.active {
+    background: #bb4374;
+    color: #fff;
+}
+.tabs-menu a:hover {
+    text-decoration: underline;
+}
+.tabs-menu a:first-child {
+    margin: 0;
+}
+.imgs-row {
+    margin: 0 0 12px;
+}
+.imgs-row .img-holder {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+.imgs-row .img-holder img {
+    vertical-align: top;
+}
+.imgs-row .img-holder .add-to-favourite {
+    position: absolute;
+    right: 14px;
+    top: 11px;
+    width: 21px;
+    height: 17px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    display: none;
+}
+.imgs-row .img-holder:hover .add-to-favourite {
+    display: block;
+}
+.imgs-row .img-holder .add-to-favourite:hover {
+    text-decoration: underline;
+}
+.imgs-row .img-holder .add-to-favourite:after {
+    width: 21px;
+    height: 17px;
+    background-position: -328px -88px;
+}
+.imgs-row .img-holder .add-to-favourite:hover:after {
+    background-position: -350px -88px;
 }
 /* service section */
 .services-section {
