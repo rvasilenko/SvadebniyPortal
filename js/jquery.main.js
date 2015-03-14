@@ -91,7 +91,7 @@ function initOpenClose() {
     });
     jQuery('.add-nav > li').openClose({
         addClassBeforeAnimation: false,
-        activeClass:'active',
+        activeClass:'open',
         opener:'> a',
         slider:'ul',
         animSpeed: 300,
