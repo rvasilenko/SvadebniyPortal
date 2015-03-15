@@ -101,6 +101,13 @@ function initOpenClose() {
         animSpeed: 300,
         effect:'slide'
     });
+    jQuery('.dropdown').openClose({
+        activeClass:'open',
+        opener:'> .opener',
+        slider:'ul',
+        effect:'none',
+        hideOnClickOutside: true
+    });
 }
 
 // slideshow init
@@ -136,6 +143,19 @@ function initCarousel() {
         maskAutoSize: false,
         animSpeed: 600,
         step: 3
+    });
+
+    jQuery('.photographer-item .scroller').scrollGallery({
+        mask: '.holder',
+        slider: '> ul',
+        slides: '> li',
+        btnPrev: '.btn-left',
+        btnNext: '.btn-right',
+        circularRotation: true,
+        autoRotation: false,
+        maskAutoSize: false,
+        animSpeed: 600,
+        step: 1
     });
 }
 
