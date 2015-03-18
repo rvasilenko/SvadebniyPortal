@@ -72,6 +72,10 @@ function initTabs() {
         checkHash: true
     });
 
+    jQuery('.tabs-menu').contentTabs({
+        tabLinks: '> a'
+    });
+
     /* comments tabs */
     jQuery('ul.tabs').delegate('li:not(.current)', 'click', function() {
         jQuery(this).addClass('current').siblings().removeClass('current')
@@ -91,11 +95,18 @@ function initOpenClose() {
     });
     jQuery('.add-nav > li').openClose({
         addClassBeforeAnimation: false,
-        activeClass:'active',
+        activeClass:'open',
         opener:'> a',
         slider:'ul',
         animSpeed: 300,
         effect:'slide'
+    });
+    jQuery('.dropdown').openClose({
+        activeClass:'open',
+        opener:'> .opener',
+        slider:'ul',
+        effect:'none',
+        hideOnClickOutside: true
     });
 }
 
@@ -132,6 +143,19 @@ function initCarousel() {
         maskAutoSize: false,
         animSpeed: 600,
         step: 3
+    });
+
+    jQuery('.photographer-item .scroller').scrollGallery({
+        mask: '.holder',
+        slider: '> ul',
+        slides: '> li',
+        btnPrev: '.btn-left',
+        btnNext: '.btn-right',
+        circularRotation: true,
+        autoRotation: false,
+        maskAutoSize: false,
+        animSpeed: 600,
+        step: 1
     });
 }
 
