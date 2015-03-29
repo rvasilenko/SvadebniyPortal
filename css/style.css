@@ -887,6 +887,16 @@ fieldset {
     height: 46px;
     background-position: 0 -992px;
 }
+
+.title.title-walk-wide {
+    margin-bottom: 20px;
+}
+.title.title-walk-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -1042px;
+}
+
 .text-title {
     display: block;
     margin: 0;
@@ -1345,6 +1355,9 @@ fieldset {
 .photo-box .sticker.turquoise {
     background-position: -392px -82px;
 }
+.photo-box .sticker.red {
+    background-position: -571px -82px;
+}
 
 .photo-box .sticker.blue-wide,
 .photo-box .sticker.dark-blue-wide,
@@ -1354,7 +1367,8 @@ fieldset {
 .photo-box .sticker.dark-purple-wide,
 .photo-box .sticker.gray-wide,
 .photo-box .sticker.green-wide,
-.photo-box .sticker.turquoise-wide{
+.photo-box .sticker.turquoise-wide,
+.photo-box .sticker.red-wide{
     width: 46px;
     height: 59px;
 }
@@ -1384,6 +1398,9 @@ fieldset {
 }
 .photo-box .sticker.turquoise-wide {
     background-position: -417px -82px;
+}
+.photo-box .sticker.red-wide {
+    background-position: -524px -82px;
 }
 /* shop */
 .shop {
@@ -1459,6 +1476,9 @@ div.see-also ul{
     margin: 0 -14px 0 0;
     padding: 0;
     list-style: none;
+}
+.less-than-3 {
+    text-align: center;
 }
 div.articles ul > li,
 div.services ul > li,
@@ -2041,6 +2061,9 @@ div.see-also ul > li{
 .ideas.ideas-wedding .text-add-photos {
     margin-right: 80px;
 }
+.ideas.ideas-walk .text-add-photos {
+    margin-right: 80px;
+}
 .color-list {
     margin: 0 0 6px;
     padding: 0;
@@ -2056,6 +2079,9 @@ div.see-also ul > li{
     margin-right: 56px;
 }
 .ideas.ideas-wedding .color-list {
+    margin-right: 120px;
+}
+.ideas.ideas-walk .color-list {
     margin-right: 120px;
 }
 .color-list li {
@@ -2135,17 +2161,20 @@ div.see-also ul > li{
 .ideas.ideas-bride .button {
     background: #dcdbdc;
 }
-.ideas.ideas-invitations .button {
+.ideas.ideas-invitations .button, {
     background: #eee6dd;
 }
 .ideas.ideas-hen-party .button,
 .ideas.ideas-stag-party .button,
 .ideas.ideas-groom .button,
-.ideas.ideas-banket .button{
+.ideas.ideas-banket .button {
     background: #e1e1e0;
 }
-.ideas.ideas-wedding .button {
+.ideas.ideas-wedding .button{
     background: none;
+}
+.ideas.ideas-walk .button {
+    background: rgba(249, 240, 225, 0.7);
 }
 .banner .button:hover,
 .ideas .button:hover{

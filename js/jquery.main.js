@@ -5,11 +5,23 @@ jQuery(function() {
     initOpenClose();
     initLightbox();
     initContactFormHandlers();
+    initLayoutFix();
 });
 jQuery(window).load(function() {
     initSlideshow();
     initCarousel();
 });
+
+// layout fix
+function initLayoutFix() {
+    jQuery('div.articles > ul, div.services > ul, div.shop > ul, div.see-also > ul').each(function(index, el) {
+        var list = jQuery(el);
+        var items = list.children();
+        if (items.size() < 3) {
+            list.addClass('less-than-3');
+        }
+    })
+}
 
 // contact form handlers
 function initContactFormHandlers() {
