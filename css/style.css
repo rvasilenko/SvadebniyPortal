@@ -906,6 +906,15 @@ fieldset {
     background-position: 0 -1092px;
 }
 
+.title.title-contacts-wide {
+    margin-bottom: 20px;
+}
+.title.title-contacts-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -1142px;
+}
+
 .text-title {
     display: block;
     margin: 0;
@@ -1944,6 +1953,9 @@ div.see-also ul > li{
 .content .party-article .num-hr {
     background-position: 0 -42px;
 }
+.content .article.contacts hr {
+    background: url(../images/separator.png) no-repeat 50% -81px;
+}
 .content .country-article hr {
     background: url(../images/separator-blue.png) no-repeat 50% 0;
 }
@@ -2472,6 +2484,42 @@ img.smile {
     color: #56433b;
 }
 
+/* contacts page */
+.article.contacts {
+    padding-bottom: 154px;
+}
+.article.contacts .content-block a {
+    color: #bc4474;
+}
+
+.article.contacts .entry p {
+    margin: 0 0 20px;
+}
+.article.contacts .content-block {
+    padding: 0 0 65px;
+}
+.article.contacts .content-block h2 {
+    margin: 0 0 8px;
+}
+.contact-form {
+    width: 794px;
+    margin: 0 auto;
+    padding: 8px 0 0;
+}
+.contact-form label {
+    display: block;
+}
+.contact-form .row {
+    display: block;
+    margin: 0 0 14px;
+}
+.contact-form .required {
+    color: #adacad;
+    margin: -10px 0 0;
+}
+.article.contacts .contact-form .required p {
+    margin: 0 0 8px;
+}
 /* themes columns */
 .themes-columns {
     padding: 20px 0 0 0;
@@ -2743,7 +2791,6 @@ img.smile {
 .btn-order {
     display: block;
     width: 204px;
-    margin: 0 0 42px auto;
     color: #a73b67;
     text-decoration: none;
     text-align: center;
@@ -2753,6 +2800,12 @@ img.smile {
     border-radius: 3px;
     padding: 7px 0 10px;
     position: relative;
+}
+.btn-order.color-white {
+    color: #fff !important;
+}
+.page-content .contact-block .btn-order {
+    margin: 0 0 42px auto;
 }
 .btn-order:hover {
     text-decoration: underline;
@@ -3483,7 +3536,10 @@ img.smile {
 .callback-form .row input[type=text],
 .order-form .row input[type=text],
 .order-form .row input[type=email],
-.order-form textarea {
+.contact-form .row input[type=text],
+.contact-form .row input[type=email],
+.order-form textarea,
+.contact-form textarea{
     display: block;
     border: 2px solid #d79bac;
     border-radius: 2px;
@@ -3493,6 +3549,7 @@ img.smile {
     color: #222;
     font-family: Tahoma, Geneva, sans-serif;
     position: relative;
+    resize: none;
 }
 .order-form textarea {
     height: 97px;
@@ -3519,6 +3576,15 @@ img.smile {
     float: left;
     margin: 4px 0 0;
 }
+.contact-form .row input[type=text],
+.contact-form .row input[type=email],
+.contact-form textarea{
+    width: 754px;
+    background: none;
+}
+.contact-form textarea {
+    height: 97px;
+}
 .wpcf7-form .captcha-row p {
     margin: 0;
     overflow: hidden;
@@ -3535,7 +3601,8 @@ img.smile {
     display: block;
 }
 .order-form input[type=submit],
-.callback-form input[type=submit]{
+.callback-form input[type=submit],
+.contact-form input[type=submit]{
     border-radius: 5px;
     width: 97px;
     font-size: 14px;
@@ -3561,6 +3628,9 @@ img.smile {
 .order-form .captcha-row input[type=submit] {
     float: right;
     margin: 4px 0 0;
+}
+.contact-form input[type=submit] {
+    width: 108px;
 }
 .order-form .required {
     font-size: 10px;
