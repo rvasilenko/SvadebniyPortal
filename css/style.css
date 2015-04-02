@@ -2052,10 +2052,6 @@ div.see-also ul > li{
     margin: 0 auto;
     display: block;
 }
-.ideas.ideas-wedding {
-    background: url(../images/bg-ideas-wedding.jpg) no-repeat 50% 0;
-    border-radius: 0;
-}
 .ideas .text-holder {
     position: absolute;
     left: 0;
@@ -2320,6 +2316,16 @@ img.smile {
 .intro {
     position: relative;
 }
+.intro:after {
+    position: absolute;
+    top: 9px;
+    bottom: 9px;
+    left: 9px;
+    right: 9px;
+    content: '';
+    border: 2px solid #fff;
+    z-index: 0;
+}
 .intro .social-holder {
     position: absolute;
     left: 108px;
@@ -2328,6 +2334,7 @@ img.smile {
     background: rgba(255, 255, 255, 0.4);
     padding: 11px 0 12px;
     text-align: center;
+    z-index: 1;
 }
 .intro .social-holder img {
     vertical-align: top;
@@ -2354,6 +2361,7 @@ img.smile {
     top: 0;
     width: 60px;
     height: 74px;
+    z-index: 1;
 }
 .intro .sticker-zags {
     background: url(../images/stickers.png) no-repeat -198px 0;
@@ -3321,6 +3329,9 @@ img.smile {
 /* service section */
 .services-section {
     padding: 0 0 60px;
+}
+.page-content .services-section {
+    width: 610px;
 }
 .page-content .services-section h1,
 .page-content .services-section h2{
