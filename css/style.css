@@ -887,6 +887,34 @@ fieldset {
     height: 46px;
     background-position: 0 -992px;
 }
+
+.title.title-walk-wide {
+    margin-bottom: 20px;
+}
+.title.title-walk-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -1042px;
+}
+
+.title.title-friends-look-wide {
+    margin-bottom: 20px;
+}
+.title.title-friends-look-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -1092px;
+}
+
+.title.title-contacts-wide {
+    margin-bottom: 20px;
+}
+.title.title-contacts-wide span {
+    width: 1201px;
+    height: 46px;
+    background-position: 0 -1142px;
+}
+
 .text-title {
     display: block;
     margin: 0;
@@ -1336,6 +1364,9 @@ fieldset {
 .photo-box .sticker.dark-purple {
     background-position: -367px -82px;
 }
+.photo-box .sticker.light-purple {
+    background-position: -629px 0;
+}
 .photo-box .sticker.gray {
     background-position: -352px 0;
 }
@@ -1345,16 +1376,21 @@ fieldset {
 .photo-box .sticker.turquoise {
     background-position: -392px -82px;
 }
+.photo-box .sticker.red {
+    background-position: -571px -82px;
+}
 
 .photo-box .sticker.blue-wide,
 .photo-box .sticker.dark-blue-wide,
 .photo-box .sticker.pink-wide,
 .photo-box .sticker.orange-wide,
 .photo-box .sticker.purple-wide,
+.photo-box .sticker.light-purple-wide,
 .photo-box .sticker.dark-purple-wide,
 .photo-box .sticker.gray-wide,
 .photo-box .sticker.green-wide,
-.photo-box .sticker.turquoise-wide{
+.photo-box .sticker.turquoise-wide,
+.photo-box .sticker.red-wide{
     width: 46px;
     height: 59px;
 }
@@ -1373,6 +1409,9 @@ fieldset {
 .photo-box .sticker.purple-wide {
     background-position: -269px -82px;
 }
+.photo-box .sticker.light-purple-wide {
+    background-position: -582px 0;
+}
 .photo-box .sticker.dark-purple-wide {
     background-position: -318px -82px;
 }
@@ -1384,6 +1423,9 @@ fieldset {
 }
 .photo-box .sticker.turquoise-wide {
     background-position: -417px -82px;
+}
+.photo-box .sticker.red-wide {
+    background-position: -524px -82px;
 }
 /* shop */
 .shop {
@@ -1459,6 +1501,9 @@ div.see-also ul{
     margin: 0 -14px 0 0;
     padding: 0;
     list-style: none;
+}
+.less-than-3 {
+    text-align: center;
 }
 div.articles ul > li,
 div.services ul > li,
@@ -1908,6 +1953,9 @@ div.see-also ul > li{
 .content .party-article .num-hr {
     background-position: 0 -42px;
 }
+.content .article.contacts hr {
+    background: url(../images/separator.png) no-repeat 50% -81px;
+}
 .content .country-article hr {
     background: url(../images/separator-blue.png) no-repeat 50% 0;
 }
@@ -2004,10 +2052,6 @@ div.see-also ul > li{
     margin: 0 auto;
     display: block;
 }
-.ideas.ideas-wedding {
-    background: url(../images/bg-ideas-wedding.jpg) no-repeat 50% 0;
-    border-radius: 0;
-}
 .ideas .text-holder {
     position: absolute;
     left: 0;
@@ -2041,6 +2085,9 @@ div.see-also ul > li{
 .ideas.ideas-wedding .text-add-photos {
     margin-right: 80px;
 }
+.ideas.ideas-walk .text-add-photos {
+    margin-right: 80px;
+}
 .color-list {
     margin: 0 0 6px;
     padding: 0;
@@ -2056,6 +2103,9 @@ div.see-also ul > li{
     margin-right: 56px;
 }
 .ideas.ideas-wedding .color-list {
+    margin-right: 120px;
+}
+.ideas.ideas-walk .color-list {
     margin-right: 120px;
 }
 .color-list li {
@@ -2135,17 +2185,20 @@ div.see-also ul > li{
 .ideas.ideas-bride .button {
     background: #dcdbdc;
 }
-.ideas.ideas-invitations .button {
+.ideas.ideas-invitations .button, {
     background: #eee6dd;
 }
 .ideas.ideas-hen-party .button,
 .ideas.ideas-stag-party .button,
 .ideas.ideas-groom .button,
-.ideas.ideas-banket .button{
+.ideas.ideas-banket .button {
     background: #e1e1e0;
 }
-.ideas.ideas-wedding .button {
+.ideas.ideas-wedding .button{
     background: none;
+}
+.ideas.ideas-walk .button {
+    background: rgba(249, 240, 225, 0.7);
 }
 .banner .button:hover,
 .ideas .button:hover{
@@ -2263,6 +2316,16 @@ img.smile {
 .intro {
     position: relative;
 }
+.intro:after {
+    position: absolute;
+    top: 9px;
+    bottom: 9px;
+    left: 9px;
+    right: 9px;
+    content: '';
+    border: 2px solid #fff;
+    z-index: 0;
+}
 .intro .social-holder {
     position: absolute;
     left: 108px;
@@ -2271,6 +2334,7 @@ img.smile {
     background: rgba(255, 255, 255, 0.4);
     padding: 11px 0 12px;
     text-align: center;
+    z-index: 1;
 }
 .intro .social-holder img {
     vertical-align: top;
@@ -2297,6 +2361,7 @@ img.smile {
     top: 0;
     width: 60px;
     height: 74px;
+    z-index: 1;
 }
 .intro .sticker-zags {
     background: url(../images/stickers.png) no-repeat -198px 0;
@@ -2427,6 +2492,42 @@ img.smile {
     color: #56433b;
 }
 
+/* contacts page */
+.article.contacts {
+    padding-bottom: 154px;
+}
+.article.contacts .content-block a {
+    color: #bc4474;
+}
+
+.article.contacts .entry p {
+    margin: 0 0 20px;
+}
+.article.contacts .content-block {
+    padding: 0 0 65px;
+}
+.article.contacts .content-block h2 {
+    margin: 0 0 8px;
+}
+.contact-form {
+    width: 794px;
+    margin: 0 auto;
+    padding: 8px 0 0;
+}
+.contact-form label {
+    display: block;
+}
+.contact-form .row {
+    display: block;
+    margin: 0 0 14px;
+}
+.contact-form .required {
+    color: #adacad;
+    margin: -10px 0 0;
+}
+.article.contacts .contact-form .required p {
+    margin: 0 0 8px;
+}
 /* themes columns */
 .themes-columns {
     padding: 20px 0 0 0;
@@ -2698,7 +2799,6 @@ img.smile {
 .btn-order {
     display: block;
     width: 204px;
-    margin: 0 0 42px auto;
     color: #a73b67;
     text-decoration: none;
     text-align: center;
@@ -2708,6 +2808,12 @@ img.smile {
     border-radius: 3px;
     padding: 7px 0 10px;
     position: relative;
+}
+.btn-order.color-white {
+    color: #fff !important;
+}
+.page-content .contact-block .btn-order {
+    margin: 0 0 42px auto;
 }
 .btn-order:hover {
     text-decoration: underline;
@@ -3224,6 +3330,9 @@ img.smile {
 .services-section {
     padding: 0 0 60px;
 }
+.page-content .services-section {
+    width: 610px;
+}
 .page-content .services-section h1,
 .page-content .services-section h2{
     font: bold 48px "artemius_light_ttregular", Georgia, serif;
@@ -3438,7 +3547,10 @@ img.smile {
 .callback-form .row input[type=text],
 .order-form .row input[type=text],
 .order-form .row input[type=email],
-.order-form textarea {
+.contact-form .row input[type=text],
+.contact-form .row input[type=email],
+.order-form textarea,
+.contact-form textarea{
     display: block;
     border: 2px solid #d79bac;
     border-radius: 2px;
@@ -3448,6 +3560,7 @@ img.smile {
     color: #222;
     font-family: Tahoma, Geneva, sans-serif;
     position: relative;
+    resize: none;
 }
 .order-form textarea {
     height: 97px;
@@ -3474,6 +3587,15 @@ img.smile {
     float: left;
     margin: 4px 0 0;
 }
+.contact-form .row input[type=text],
+.contact-form .row input[type=email],
+.contact-form textarea{
+    width: 754px;
+    background: none;
+}
+.contact-form textarea {
+    height: 97px;
+}
 .wpcf7-form .captcha-row p {
     margin: 0;
     overflow: hidden;
@@ -3490,7 +3612,8 @@ img.smile {
     display: block;
 }
 .order-form input[type=submit],
-.callback-form input[type=submit]{
+.callback-form input[type=submit],
+.contact-form input[type=submit]{
     border-radius: 5px;
     width: 97px;
     font-size: 14px;
@@ -3516,6 +3639,9 @@ img.smile {
 .order-form .captcha-row input[type=submit] {
     float: right;
     margin: 4px 0 0;
+}
+.contact-form input[type=submit] {
+    width: 108px;
 }
 .order-form .required {
     font-size: 10px;
