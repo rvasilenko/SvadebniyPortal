@@ -524,15 +524,15 @@ fieldset {
 /* add links */
 .add-links {
     float: right;
-    font-size: 15px;
-    padding: 17px 60px 0 0;
+    font-size: 16px;
+    padding: 29px 60px 0 0;
     margin: 0;
     list-style: none;
-    width: 100px;
+    width: 110px;
 }
 .add-links li {
     position: relative;
-    padding: 0 0 4px 17px;
+    padding: 0 0 5px 23px;
 }
 .add-links li:after {
     content: '';
@@ -541,25 +541,19 @@ fieldset {
     top: 0;
     background: url(../images/sprite.png);
 }
-.add-links li.shop:after {
-    width: 9px;
-    height: 10px;
-    top: 6px;
-    background-position: -151px -95px;
-}
 .add-links li.services:after {
-    width: 12px;
-    height: 13px;
-    top: 4px;
+    width: 20px;
+    height: 20px;
+    top: 0;
     left: -2px;
-    background-position: -162px -95px;
+    background-position: -145px -96px;
 }
 .add-links li.articles:after {
-    width: 9px;
-    height: 12px;
-    top: 5px;
-    left: 0px;
-    background-position: -176px -95px;
+    width: 12px;
+    height: 16px;
+    top: 4px;
+    left: 0;
+    background-position: -165px -96px;
 }
 .add-links a {
     color: #726658;
@@ -2724,7 +2718,7 @@ img.smile {
     color: #736357;
 }
 .add-nav a:hover,
-.add-nav li.active a {
+.add-nav ul li.active a {
     color: #bc4474;
 }
 .add-nav > li > a:after {
@@ -2737,7 +2731,7 @@ img.smile {
     left: 0;
     background: url(../images/sprite.png) no-repeat -216px -80px;
 }
-.add-nav > li.open > a:after {
+.add-nav > li.active > a:after {
     width: 15px;
     height: 8px;
     left: -6px;
@@ -2755,7 +2749,7 @@ img.smile {
 .add-nav ul li {
     padding: 3px 0;
 }
-.add-nav > li.open ul {
+.add-nav > li.active ul {
     display: block;
 }
 /* page content */
@@ -3423,7 +3417,7 @@ img.smile {
 .social-links a {
     display: block;
     position: relative;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 40px;
 }
 .social-links a:after {
     content: '';
