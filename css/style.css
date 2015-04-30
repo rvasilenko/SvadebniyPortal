@@ -2718,7 +2718,8 @@ img.smile {
     color: #736357;
 }
 .add-nav a:hover,
-.add-nav ul li.current-menu-ancestor > a {
+.add-nav ul li.current-menu-ancestor > a,
+.add-nav ul li.active > a{
     color: #bc4474;
 }
 .add-nav > li > a:after {
