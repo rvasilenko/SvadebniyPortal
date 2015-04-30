@@ -947,10 +947,10 @@ fieldset {
     color: #6fa1c1;
 }
 /* top articles */
-.top-articles {
+.   top-articles {
     position: relative;
     width: 797px;
-    margin: 0 0 52px;
+    margin: 0 0 42px;
 }
 .top-articles .slides{
     margin: 0;
@@ -1208,6 +1208,10 @@ fieldset {
     float: right;
     width: 384px;
     margin: 0 6px 0 0;
+}
+
+#sidebar .photo-box {
+    margin-bottom: 10px;
 }
 
 /* widget */
