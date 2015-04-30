@@ -107,7 +107,7 @@ function initOpenClose() {
     });
     jQuery('.add-nav > li').openClose({
         addClassBeforeAnimation: false,
-        activeClass:'active',
+        activeClass:'current-menu-ancestor',
         opener:'> a',
         slider:'ul',
         animSpeed: 300,

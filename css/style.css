@@ -2718,7 +2718,7 @@ img.smile {
     color: #736357;
 }
 .add-nav a:hover,
-.add-nav ul li.active > a {
+.add-nav ul li.current-menu-ancestor > a {
     color: #bc4474;
 }
 .add-nav > li > a:after {
@@ -2731,7 +2731,7 @@ img.smile {
     left: 0;
     background: url(../images/sprite.png) no-repeat -216px -80px;
 }
-.add-nav > li.active > a:after {
+.add-nav > li.current-menu-ancestor > a:after {
     width: 15px;
     height: 8px;
     left: -6px;
@@ -2752,7 +2752,7 @@ img.smile {
 .add-nav ul li {
     padding: 3px 0;
 }
-.add-nav > li.active ul {
+.add-nav > li.current-menu-ancestor ul {
     display: block;
 }
 /* page content */
