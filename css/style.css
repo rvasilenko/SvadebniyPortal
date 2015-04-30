@@ -2718,7 +2718,7 @@ img.smile {
     color: #736357;
 }
 .add-nav a:hover,
-.add-nav ul li.active a {
+.add-nav ul li.active > a {
     color: #bc4474;
 }
 .add-nav > li > a:after {
@@ -2745,6 +2745,9 @@ img.smile {
     display: none;
     font-size: 15px;
     line-height: 20px;
+}
+.add-nav ul ul {
+    padding-left: 20px;
 }
 .add-nav ul li {
     padding: 3px 0;
