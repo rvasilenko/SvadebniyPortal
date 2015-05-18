@@ -3179,27 +3179,27 @@ img.smile {
 .pagination ul li {
     display: inline;
 }
-.pagination ul a {
+.pagination ul a.page {
     text-decoration: none;
     padding: 1px 2px;
 }
-.pagination ul li.active a {
+.pagination ul span.current {
     background: #bb4374;
     border-radius: 3px;
     color: #fff;
     padding: 1px 4px;
 }
-.pagination .arrow-prev,
-.pagination .arrow-next {
+.pagination .previouspostslink,
+.pagination .nextpostslink {
     display: inline-block;
     width: 7px;
     height: 13px;
     font-size: 0;
 }
-.pagination .arrow-prev {
+.pagination .previouspostslink {
     background: url(../images/sprite.png) no-repeat -305px -104px;
 }
-.pagination .arrow-next {
+.pagination .nextpostslink {
     background: url(../images/sprite.png) no-repeat -315px -104px;
 }
 /* photographer section */
