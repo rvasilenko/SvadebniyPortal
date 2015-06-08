@@ -909,6 +909,14 @@ fieldset {
     background-position: 0 -1142px;
 }
 
+.title.title-feedback-wide {
+    margin-bottom: 20px;
+}
+.title.title-feedback-wide span {
+    width: 1204px;
+    height: 46px;
+    background-position: 0 -1192px;
+}
 .text-title {
     display: block;
     margin: 0;
@@ -3759,6 +3767,46 @@ img.smile {
 .order-form span.wpcf7-not-valid-tip,
 .callback-form span.wpcf7-not-valid-tip{
     font-size: 12px;
+}
+
+/* feedback form */
+.feedback-form {
+    width: 748px;
+    margin: 0;
+    padding: 58px 0 0 20px;
+}
+.feedback-form label {
+    float: left;
+    font-style: italic;
+}
+.feedback-form .row input[type=text],
+.feedback-form .row input[type=email],
+.feedback-form textarea{
+    float: right;
+    width: 342px;
+    background: #f7f5f7;
+    border-color: #efe2e5;
+}
+.feedback-form textarea {
+    height: 168px;
+    margin: 0 0 -12px;
+}
+.feedback-form input[type=submit] {
+    float: right;
+}
+.feedback-form .row {
+    margin: 0 0 32px;
+}
+.feedback-form .row:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.feedback-form .required {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    padding: 12px 0 0;
 }
 .lightbox .success {
     display: none;
