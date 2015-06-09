@@ -1004,6 +1004,7 @@ fieldset {
 .photo-box-large .photo .cropper,
 .photo-box-large2 .photo .cropper{height: 256px;}
 
+.photo-box-large2 .photo .slide {width: 375px;}
 .top-articles .photo img {
     display: block;
     margin: 0 auto;
@@ -1286,10 +1287,40 @@ fieldset {
     height: 55px;
     vertical-align: middle;
     display: table-cell;
+    text-align: left;
 }
 .photo-box .caption .cell-sticker {
     vertical-align: bottom;
 }
+.photo-box .slide {
+    float: left;
+}
+
+.photo-box .photo .btn-left,
+.photo-box .photo .btn-right {
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    background: red;
+    top: 50%;
+    margin: 15px 0 0;
+    z-index: 10;
+}
+.photo-box .photo .btn-left {
+    left: 25px;
+    background: url(../images/sprite.png) no-repeat -423px -8px;
+}
+.photo-box .photo .btn-left:hover {
+    background-position: -450px -8px;
+}
+.photo-box .photo .btn-right {
+    right: 25px;
+    background: url(../images/sprite.png) no-repeat -423px -40px;
+}
+.photo-box .photo .btn-right:hover {
+    background-position: -450px -40px;
+}
+
 .photo-box-large2 .caption {
     top: 0;
     bottom: auto;
@@ -1343,6 +1374,7 @@ fieldset {
     color: #6d6e71;
 }
 .photo-box .caption .price {font-size: 14px;}
+.photo-box-large2 .caption .price {font-size: 18px;}
 .photo-box .sticker {
     display: block;
     margin: 0 15px 0 0;
@@ -1392,7 +1424,8 @@ fieldset {
 .photo-box .sticker.gray-wide,
 .photo-box .sticker.green-wide,
 .photo-box .sticker.turquoise-wide,
-.photo-box .sticker.red-wide{
+.photo-box .sticker.red-wide,
+.photo-box .sticker.violet-wide{
     width: 46px;
     height: 59px;
 }
@@ -1428,6 +1461,9 @@ fieldset {
 }
 .photo-box .sticker.red-wide {
     background-position: -524px -82px;
+}
+.photo-box .sticker.violet-wide {
+    background-position: -596px -82px;
 }
 /* shop */
 .shop {

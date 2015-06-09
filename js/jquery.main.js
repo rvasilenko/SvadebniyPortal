@@ -169,6 +169,19 @@ function initCarousel() {
         animSpeed: 600,
         step: 1
     });
+
+    jQuery('.photo-box .photo').scrollGallery({
+        mask: '.cropper',
+        slider: '> .slides',
+        slides: '> .slide',
+        btnPrev: '.btn-left',
+        btnNext: '.btn-right',
+        circularRotation: true,
+        autoRotation: false,
+        maskAutoSize: false,
+        animSpeed: 600,
+        step: 1
+    });
 }
 
 // lightbox init
